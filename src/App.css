@@ -1,0 +1,114 @@
+/* Estilo para el navbar */
+#root{
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+   
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+}
+.navbar{
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.navbar-light {
+    background-color: #f5eeee !important; /* Fondo claro minimalista */
+    border-bottom: 1px solid #eaeaea;      /* Línea sutil en el fondo */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;                      /* Tamaño de la marca más pequeño */
+    color: #fff9f9 !important;                 /* Texto oscuro para el logo */
+  }
+  
+  .nav-link {
+    font-size: 1rem;                        /* Tamaño del texto de los enlaces */
+    font-weight: 500;
+    transition: color 0.3s ease;   
+    color: #fff9f9 !important;               /* Transición suave para el hover */
+  }
+  
+  .nav-link:hover {
+    color: #d30f0f !important;              /* Cambia el color al pasar el cursor */
+  }
+  
+  /* Alineación más espaciosa y centrada */
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  /* @media (max-width: 768px) {
+    .navbar-collapse {
+      justify-content: center;
+    }
+  } */
+
+#iconos{
+  transition: transform 0.3s ease, color 0.3s ease;
+  color:white;
+}
+#iconos:hover{
+  transform: scale(1.2);
+  color: #000000;
+}
+#texto{
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-size: 17px;
+}
+.icon {
+  font-size: 3rem;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  color: #000000; /* Cambia el color al hacer hover */
+}
+
+@media (max-width: 768px) {
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+    font-size: 2rem;
+  }
+}
+.description {
+  max-width: 100%; /* Asegura que no se pase del ancho en móviles */
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: 1.3rem; /* Ajuste para mejorar legibilidad en móviles */
+    width: 90%; /* Ocupa casi todo el ancho en móviles */
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.3rem; /* Tamaño más grande en pantallas medianas */
+    width: 50%; /* Limita el ancho en pantallas más grandes */
+  }
+}
+section div img{
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin: 10px;
+  padding: 3px;
+
+}
+section div img:hover{
+  transform: scale(1.05);
+}
