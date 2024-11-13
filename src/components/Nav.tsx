@@ -1,5 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { FormContacto } from './FormContacto';
 
 export const Navegacion = () => {
   return (
@@ -11,7 +12,7 @@ export const Navegacion = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav className="ml-auto">
-             <button className='btn btn-outline-light - p-2 m-2' id='contacto'>Contacto</button>
+             <FormContacto/>
             </Nav>
           </Navbar.Collapse>
         </div>

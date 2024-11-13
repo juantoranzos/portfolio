@@ -2,8 +2,8 @@
 
 import { Navegacion } from '../components/Nav';
 import { About } from './About';
-import { Contacto } from './Contacto';
 import { Proyectos } from '../components/Proyectos';
+import { Footer } from '../components/Footer';
 
 export const Home = () => {
   return (
@@ -11,7 +11,8 @@ export const Home = () => {
       <Navegacion />
       <About  />
       <Proyectos />
-      <Contacto />
+      
+      <Footer />
     </>
   );
 };

@@ -7,7 +7,7 @@ import { Habilidades } from "./Habilidades"
 
 export const AboutMe = () => {
     return (
-        <section className="py-0">
+        <section className="">
             <div className="container py-5 justify-content-center text-center align-items-center" data-aos="fade-up">
 
                 <h1 className='text-center text-white p-2 font-weight-bold m-3 fs-1 ' >Juan Toranzos</h1>
@@ -23,7 +23,7 @@ export const AboutMe = () => {
             </div>
             <Me></Me>
             <Habilidades />
-          <div className="vh-100 ">
+          <div>
             <Container className="py-5">
                   <Row>
                     <Col md={6} className="d-flex align-items-center justify-content-center">

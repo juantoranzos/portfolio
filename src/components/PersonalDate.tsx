@@ -71,7 +71,7 @@ export const PersonalDate: React.FC = () => {
         </li>
       </ul>
       <div className="text-center mt-4">
-        <Button variant="info" onClick={toggleLanguage}>
+        <Button variant="dark" onClick={toggleLanguage}>
           {texts[language].buttonText}
         </Button>
       </div>
