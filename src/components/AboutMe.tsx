@@ -9,7 +9,7 @@ import useLangStore from '../store/langStore';
 
 
 export const AboutMe = () => {
-  const {language, setLanguage}:any = useLangStore()
+  const {language}:any = useLangStore()
     return (
         <section className="">
             <div className="container py-5 justify-content-center text-center align-items-center" data-aos="fade-up">
