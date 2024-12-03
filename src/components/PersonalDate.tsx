@@ -1,47 +1,35 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import traducciones from '../helpers/traduccion';
 import useLangStore from '../store/langStore';
 
-interface LanguageTexts {
-  personalData: string;
-  age: string;
-  location: string;
-  nationality: string;
-  languages: string;
-  ageValue: string;
-  locationValue: string;
-  nationalityValue: string;
-  languagesValue: string;
-}
-
-interface Texts {
-  en: LanguageTexts;
-  es: LanguageTexts;
-}
+const traducciones = {
+  en: {
+    datospersonales: 'Personal Data',
+    edad: 'Age',
+    ubicacion: 'Location',
+    nacionalidad: 'Nationality',
+    idioma: 'Languages',
+  },
+  es: {
+    datospersonales: 'Datos Personales',
+    edad: 'Edad',
+    ubicacion: 'Ubicación',
+    nacionalidad: 'Nacionalidad',
+    idioma: 'Idiomas',
+  },
+};
 
 export const PersonalDate: React.FC = () => {
-  // Estado global del idioma desde el store
-  const { language, toggleLanguage }: { language: 'en' | 'es'; toggleLanguage: () => void } = useLangStore();
+  const { language } = useLangStore();
 
-  const texts: Texts = {
+  const texts = {
     en: {
-      personalData: 'Personal Data',
-      age: 'Age',
-      location: 'Location',
-      nationality: 'Nationality',
-      languages: 'Languages',
       ageValue: '22',
       locationValue: 'Tucumán, Argentina',
       nationalityValue: 'Argentinian',
       languagesValue: 'English - Spanish',
     },
     es: {
-      personalData: 'Datos Personales',
-      age: 'Edad',
-      location: 'Ubicación',
-      nationality: 'Nacionalidad',
-      languages: 'Idiomas',
       ageValue: '22',
       locationValue: 'Tucumán, Argentina',
       nationalityValue: 'Argentina',
@@ -68,8 +56,6 @@ export const PersonalDate: React.FC = () => {
           <span className="fw-bold text-info">{traducciones[language].idioma}:</span> {texts[language].languagesValue}
         </li>
       </ul>
-      <div className="text-center">
-      </div>
     </Container>
   );
 };
