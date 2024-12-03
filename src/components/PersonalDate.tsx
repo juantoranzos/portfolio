@@ -19,23 +19,23 @@ const traducciones = {
   },
 };
 
-export const PersonalDate: React.FC = () => {
-  const { language } = useLangStore();
+const texts = {
+  en: {
+    ageValue: '22',
+    locationValue: 'Tucumán, Argentina',
+    nationalityValue: 'Argentinian',
+    languagesValue: 'English - Spanish',
+  },
+  es: {
+    ageValue: '22',
+    locationValue: 'Tucumán, Argentina',
+    nationalityValue: 'Argentina',
+    languagesValue: 'Inglés - Español',
+  },
+};
 
-  const texts = {
-    en: {
-      ageValue: '22',
-      locationValue: 'Tucumán, Argentina',
-      nationalityValue: 'Argentinian',
-      languagesValue: 'English - Spanish',
-    },
-    es: {
-      ageValue: '22',
-      locationValue: 'Tucumán, Argentina',
-      nationalityValue: 'Argentina',
-      languagesValue: 'Inglés - Español',
-    },
-  };
+export const PersonalDate: React.FC = () => {
+  const { language } = useLangStore(); // Ahora TypeScript reconoce 'es' | 'en'
 
   return (
     <Container className="text-white p-4 m-3 rounded-3 w-75 mx-auto" data-aos="fade-up">
