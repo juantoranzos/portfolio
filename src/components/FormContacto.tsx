@@ -34,7 +34,7 @@ export const FormContacto = () => {
           <Modal.Title>Contactate conmigo</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <form ref={form} onSubmit={sendEmail} data-aos="fade-down">
+          <form ref={form} onSubmit={sendEmail} data-aos="fade">
             <input type="text" placeholder="Ingresa tu nombre" className="form-control m-auto w-50 p-2 mb-2" name="user_name" />
             <input type="email" placeholder="Ingresa tu email" className="form-control m-auto w-50 p-2 mb-2" name="user_email" />
             <input type="text" placeholder="Asunto" className="form-control m-auto w-50 p-2 mb-2" name="subject" />

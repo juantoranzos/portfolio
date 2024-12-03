@@ -1,21 +1,20 @@
 /* Estilo para el navbar */
 #root{
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgb(57, 68, 68);
    
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 }
+html{
+  background-color: rgb(57, 68, 68);
+}
 .navbar{
-  background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .navbar-light {
-    background-color: #f5eeee !important; /* Fondo claro minimalista */
+   /* Fondo claro minimalista */
     border-bottom: 1px solid #eaeaea;      /* Línea sutil en el fondo */
   }
   
@@ -44,6 +43,11 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
       justify-content: center;
     }
   } */
+   /* .nombre{
+    font-family: 'Oswald', sans-serif;
+    color: #dd4e07;
+    font-size: 30px;
+   } */
 
 #iconos{
   transition: transform 0.3s ease, color 0.3s ease;

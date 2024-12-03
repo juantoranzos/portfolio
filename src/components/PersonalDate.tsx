@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import { Container, Button } from 'react-bootstrap';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import traducciones from '../helpers/traduccion';
+import useLangStore from '../store/langStore';
+
 interface LanguageTexts {
   personalData: string;
   age: string;
@@ -10,16 +13,16 @@ interface LanguageTexts {
   locationValue: string;
   nationalityValue: string;
   languagesValue: string;
-  buttonText: string;
 }
+
 interface Texts {
   en: LanguageTexts;
   es: LanguageTexts;
 }
 
 export const PersonalDate: React.FC = () => {
-  // Estado de idioma
-  const [language, setLanguage] = useState<'en' | 'es'>('es');
+  // Estado global del idioma desde el store
+  const { language, toggleLanguage }: { language: 'en' | 'es'; toggleLanguage: () => void } = useLangStore();
 
   const texts: Texts = {
     en: {
@@ -32,7 +35,6 @@ export const PersonalDate: React.FC = () => {
       locationValue: 'Tucumán, Argentina',
       nationalityValue: 'Argentinian',
       languagesValue: 'English - Spanish',
-      buttonText: 'Switch to Spanish',
     },
     es: {
       personalData: 'Datos Personales',
@@ -44,36 +46,29 @@ export const PersonalDate: React.FC = () => {
       locationValue: 'Tucumán, Argentina',
       nationalityValue: 'Argentina',
       languagesValue: 'Inglés - Español',
-      buttonText: 'Cambiar a Inglés',
     },
   };
 
-
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'es' : 'en'));
-  };
-
   return (
-    <Container className="text-white p-4 m-3  rounded-3 w-75 mx-auto" data-aos="fade-up">
-      <h2 className="text-center text-uppercase mb-4">{texts[language].personalData}</h2>
+    <Container className="text-white p-4 m-3 rounded-3 w-75 mx-auto" data-aos="fade-up">
+      <h2 className="text-center text-uppercase mb-4 text-info">
+        {traducciones[language].datospersonales}
+      </h2>
       <ul className="list-unstyled text-start px-3">
         <li className="mb-2">
-          <span className="fw-bold text-info">{texts[language].age}:</span> {texts[language].ageValue}
+          <span className="fw-bold text-info">{traducciones[language].edad}:</span> {texts[language].ageValue}
         </li>
         <li className="mb-2">
-          <span className="fw-bold text-info">{texts[language].location}:</span> {texts[language].locationValue}
+          <span className="fw-bold text-info">{traducciones[language].ubicacion}:</span> {texts[language].locationValue}
         </li>
         <li className="mb-2">
-          <span className="fw-bold text-info">{texts[language].nationality}:</span> {texts[language].nationalityValue}
+          <span className="fw-bold text-info">{traducciones[language].nacionalidad}:</span> {texts[language].nationalityValue}
         </li>
         <li className="mb-2">
-          <span className="fw-bold text-info">{texts[language].languages}:</span> {texts[language].languagesValue}
+          <span className="fw-bold text-info">{traducciones[language].idioma}:</span> {texts[language].languagesValue}
         </li>
       </ul>
-      <div className="text-center mt-4">
-        <Button variant="dark" onClick={toggleLanguage}>
-          {texts[language].buttonText}
-        </Button>
+      <div className="text-center">
       </div>
     </Container>
   );
