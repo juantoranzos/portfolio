@@ -11,7 +11,7 @@ import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import traducciones from "../helpers/traduccion"
 import useLangStore from '../store/langStore';
 export const Habilidades = () => {
-  const {language, setLanguage}:any = useLangStore()
+  const {language}:any = useLangStore()
     return (
         <section className="py-5" data-aos="fade-up">
         <h2 className="text-center text-info font-weight-bold mb-4">

@@ -5,7 +5,7 @@ import traducciones from "../helpers/traduccion"
 import useLangStore from '../store/langStore';
 
 export const Intereses = () => {
-  const {language, setLanguage}:any = useLangStore()
+  const {language}:any = useLangStore()
   return (
     <Container className="text-center my-4" id="intereses" data-aos="fade-up">
       <h2 className="mb-4 text-uppercase text-info">{traducciones[language].intereses}</h2>
