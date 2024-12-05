@@ -26,7 +26,7 @@ export const FormContacto = () => {
 
   return (
     <div className="modal-show" style={{ display: 'block', position: 'initial' }}>
-      <Button variant="dark" onClick={handleShowModal}>
+      <Button variant="outline-light" onClick={handleShowModal}>
         Contacto
       </Button>
       <Modal show={showModal} onHide={handleCloseModal} centered>
@@ -35,10 +35,10 @@ export const FormContacto = () => {
         </Modal.Header>
         <Modal.Body>
           <form ref={form} onSubmit={sendEmail} data-aos="fade">
-            <input type="text" placeholder="Ingresa tu nombre" className="form-control m-auto w-50 p-2 mb-2" name="user_name" />
-            <input type="email" placeholder="Ingresa tu email" className="form-control m-auto w-50 p-2 mb-2" name="user_email" />
-            <input type="text" placeholder="Asunto" className="form-control m-auto w-50 p-2 mb-2" name="subject" />
-            <textarea name="message" id="mensaje" placeholder="Escribe tu mensaje aqui" className="form-control m-auto w-50 p-2 mb-2"></textarea>
+            <input type="text" placeholder="Ingresa tu nombre" className="form-control m-auto w-50 p-2 mb-2" name="user_name" required />
+            <input type="email" placeholder="Ingresa tu email" className="form-control m-auto w-50 p-2 mb-2" name="user_email"  required/>
+            <input type="text" placeholder="Asunto" className="form-control m-auto w-50 p-2 mb-2" name="subject" required />
+            <textarea name="message" id="mensaje" placeholder="Escribe tu mensaje aqui" className="form-control m-auto w-50 p-2 mb-2" required></textarea>
             <div className="text-center">
               <input type="submit" value="Send" className="btn btn-dark" />
             </div>

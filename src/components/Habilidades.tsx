@@ -13,7 +13,7 @@ import useLangStore from '../store/langStore';
 export const Habilidades = () => {
   const {language}:any = useLangStore()
     return (
-        <section className="py-5" data-aos="fade-up">
+        <section className="container p-5" data-aos="fade-up">
         <h2 className="text-center text-info font-weight-bold mb-4">
           {traducciones[language].stack}
         </h2>

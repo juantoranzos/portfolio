@@ -11,8 +11,8 @@ import useLangStore from '../store/langStore';
 export const AboutMe = () => {
   const {language}:any = useLangStore()
     return (
-        <section>
-            <div className="container py-5 justify-content-center text-center align-items-center" data-aos="fade-up">
+        <section className=" p-3">
+            <div className="py-5 justify-content-center text-center align-items-center" data-aos="fade-up">
 
                 <h1 className='text-center  p-2 text-info font-weight-bold m-3 fs-1 nombre ' >Juan Toranzos</h1>
                 <h2 className="text-center p-3 fs-2 text-info " >{traducciones[language].titulo}</h2>
