@@ -15,7 +15,7 @@ export const Navegacion = () => {
 
     return (
         <>
-            <Navbar expand="lg" className="py-3">
+            <Navbar expand="lg" className="">
                 <div className="container navegacion p-2">
                     <Navbar.Brand href="#home" className="fw-bold text-white p-2 m-2">
                         <img src={logo} alt="logo" />

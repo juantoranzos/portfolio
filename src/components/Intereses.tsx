@@ -9,30 +9,24 @@ export const Intereses = () => {
   return (
     <Container className="text-center my-4" id="intereses" data-aos="fade-up">
       <h2 className="mb-4 text-uppercase text-info">{traducciones[language].intereses}</h2>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center p-3 my-3">
         <Col xs={6} md={4} lg={2} className="mb-3">
           <FaPlane size={50} color='white' />
-          <p className='text-white' id='texto'>Viajar</p>
         </Col>
         <Col xs={6} md={4} lg={2} className="mb-3">
           <FaLaptopCode  size={50} color='white' />
-          <p className='text-white' id='texto'>Tecnología</p>
         </Col>
         <Col xs={6} md={4} lg={2} className="mb-3">
           <FaFutbol  size={50} color='white' />
-          <p className='text-white' id='texto'>Deporte</p>
         </Col>
         <Col xs={6} md={4} lg={2} className="mb-3">
           <FaCode size={50} color='white' />
-          <p className='text-white' id='texto'>Codear</p>
         </Col>
         <Col xs={6} md={4} lg={2} className="mb-3">
           <FaBook  size={50} color='white' />
-          <p className='text-white' id='texto'>Libros</p>
         </Col>
         <Col xs={6} md={4} lg={2} className="mb-3">
           <FaUtensils size={50} color='white' />
-          <p className='text-white' id='texto'>Comida</p>
         </Col>
       </Row>
     </Container>
