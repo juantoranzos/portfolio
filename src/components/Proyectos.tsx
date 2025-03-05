@@ -1,10 +1,12 @@
-import { FaCss3, FaHtml5, FaJs, FaReact, FaBootstrap } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaReact, FaBootstrap, FaNodeJs} from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 import banco from "../img/banco.webp";
 import sge from "../img/sge-DAXH5DF_.webp";
 import guay from "../img/guaymascons.webp";
 import clima from "../img/clima.webp";
 import traducciones from "../helpers/traduccion";
 import useLangStore from "../store/langStore";
+import elociofoto from "../img/elociodepapel.png"
 
 export const Proyectos = () => {
   const { language }: any = useLangStore();
@@ -42,6 +44,14 @@ export const Proyectos = () => {
       tecnologias: [<FaHtml5 key="html" />, <FaCss3 key="css" />, <FaJs key="js" />, <FaReact key="react" />, <FaBootstrap key="bootstrap" />],
       description: traducciones[language].descripcionguay,
     },
+    {
+      title: "El Ocio",
+      link: "https://elocio.netlify.app/",
+      image: elociofoto,
+      alt: "El Ocio",
+      tecnologias: [<FaHtml5 key="html" />, <FaCss3 key="css" />, <FaJs key="js" />, <FaReact key="react" />, <FaBootstrap key="bootstrap" />, <FaNodeJs key="node" />, <SiMongodb />],
+      description: traducciones[language].descripcionocio,
+    }
   ];
 
   return (
