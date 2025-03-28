@@ -1,5 +1,5 @@
 
-import yo from '../../public/yo.webp';
+import yo from '../../public/fotomia.webp';
 export const Me = () => {
     return (
         <div className='text-center p-2 m-2' data-aos="zoom-in">

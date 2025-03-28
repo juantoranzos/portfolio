@@ -1,7 +1,8 @@
  const traducciones : any ={
     es:{
-        titulo: "Desarrollador Web Full Stack",
-        sobremi: "Hola, Soy Juan, un apasionado programador. Actualmente me dedico al desarrollo Full Stack con una solida experiencia en la creacion y diseño de paginas Web completas y eficientes. Mi enfoque se centra en FrontEnd y BackEnd para ofrecer la mejor solucion posible.💻",
+        yo: "Hola 👋🏽, soy Juan Toranzos. Desarrollador web",
+        titulo: "Acerca de mi 👨🏽‍💻",
+        sobremi: "Actualmente me dedico al desarrollo Full Stack con una solida experiencia en la creacion y diseño de paginas Web completas y eficientes. Mi enfoque se centra en FrontEnd y BackEnd para ofrecer la mejor solucion posible.💻",
         stack: "Herramientas de Desarrollo",
         intereses:"Intereses",
         datospersonales: "Datos Personales",
@@ -19,8 +20,9 @@
         
     },
     en:{
-        titulo: "Full Stack Web Developer",
-        sobremi: "Hi, I'm Juan, a passionate programmer. I'm currently dedicated to Full Stack development with a solid experience in the creation and design of complete and efficient Web pages. My focus is on FrontEnd and BackEnd to offer the best possible solution.💻",
+        yo: "Hello 👋🏽, I'm Juan Toranzos. Web Developer",
+        titulo: "About me 👨🏽‍💻",
+        sobremi: " I'm currently dedicated to Full Stack development with a solid experience in the creation and design of complete and efficient Web pages. My focus is on FrontEnd and BackEnd to offer the best possible solution.💻",
         stack: "Development Tools",
         intereses:"Interests",
         datospersonales: "Personal Data",
